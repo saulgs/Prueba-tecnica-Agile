@@ -2,6 +2,7 @@ $(document).ready(function(){
     initSlcCategories()    
 });
 
+//Grafico de barra utilizando Charts.js
 var ctx = document.getElementById("myChart").getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'bar',
@@ -29,6 +30,7 @@ var myChart = new Chart(ctx, {
     }
 });
 
+//Funcion que mete valores en el select list de categoria al iniciar la página
 function initSlcCategories(){
     $.ajax({
 		url:"/selectLists/categorias",
@@ -48,7 +50,8 @@ function initSlcCategories(){
     });
 }
 
-
+//Funcion que al desencadenarse el evento change en el select list de categoria
+//hace una peticion AJAX para solicitar datos al backend y meter valores en el select list de producto de acuerdo a la categoria seleccionada
 $("#slc-categoria").change(function() {
     var parametro = "opcion=" + $(this).val();
 
@@ -78,6 +81,8 @@ $("#slc-categoria").change(function() {
 
 });
 
+//Funcion que al desencadenarse el evento change en el select list de producto
+//hace una peticion AJAX para solicitar datos al backend y meter valores en el select list de marca de acuerdo al producto seleccionado
 $("#slc-producto").change(function() {
     var parametro = "opcion=" + $(this).val();
 
@@ -102,6 +107,8 @@ $("#slc-producto").change(function() {
 
 });
 
+//Funcion que al desencadenarse el evento change en el select list de marca
+//hace una peticion AJAX para solicitar datos al backend y mostrar los datos estadisticos en el grafico de barras que se visualiza en la pagina de acuerdo al valor seleccionado
 $("#slc-marca").change(function() {
     var parametro = "opcion=" + $(this).val();
     
@@ -124,6 +131,7 @@ $("#slc-marca").change(function() {
 
 });
 
+//Funcion que remueve los datos estadisticos actuales del grafico de barra y los sobreescribe con datos iniciales
 function removerDatos(chart) {
     chart.data.datasets.forEach((dataset) => {
         dataset.label = 'Numero de ventas';
@@ -134,6 +142,7 @@ function removerDatos(chart) {
     chart.update();
 }
 
+//Funcion que actualiza los datos del grafico a nuevos datos estadisticos
 function actualizarDatos(chart, lbl, array_data) {
     chart.data.datasets.forEach((dataset) => {
         dataset.label = 'Numero de ventas de ' + lbl;

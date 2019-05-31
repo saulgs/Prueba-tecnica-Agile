@@ -1,6 +1,10 @@
 var express = require('express');
 var bodyParser = require("body-parser");
 
+/*
+ * Creamos una funcion router que exportaremos luego que nos permitira importarla
+ * en otros archivos.
+ */
 var router = express.Router();
 var urlEncodeParser = bodyParser.urlencoded({
   extended: false
