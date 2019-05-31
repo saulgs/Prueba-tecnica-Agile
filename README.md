@@ -5,16 +5,16 @@
 <p>
 En el siguiente repositorio se encuentra la página web asignada para la prueba técnica asignada en Agile Solutions.
 </p><br>
-<p>
+<h3>
 Programas requeridos para iniciar poder visualizar la página web
-</p>
+</h3>
 <ul>
     <li>Git - <a href="https://git-scm.com/downloads">Windows, MacOS</a></li>
     <li>NodeJS (Recomendado: Version LTS) - <a href="https://nodejs.org/es/download/">Windows, MacOS</a></li>
 </ul><br>
-<h4>
+<h3>
 Uso
-</h4>
+</h3>
 <ol>
     <li>Instalar los programas requeridos</li>
     <li>Descargar la pagina desde el repositorio y poner la carpeta “Prueba-tecnica-Agile” en la ubicación deseada</li>
@@ -24,3 +24,11 @@ Uso
     <li>Acceder desde el navegador a la siguiente dirección "http://localhost:3000/"</li>
     <li>Interactuar con la página</li>
 </ol><br>
+<h3>
+Archivos y carpetas donde se encuentra código a revisar
+</h3>
+<ul>
+    <li>Archivo: index.js</li>
+    <li>Carpeta: /routes</li>
+    <li>Carpeta: /public</li>
+</ul>
