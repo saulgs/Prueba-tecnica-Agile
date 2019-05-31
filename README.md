@@ -5,6 +5,9 @@
 <p>
 En el siguiente repositorio se encuentra la página web asignada para la prueba técnica asignada en Agile Solutions.
 </p><br>
+<p>
+La página web ha sido desarrollada utilizando JQuery y NodeJS.
+</p><br>
 <h3>
 Programas requeridos para poder visualizar la página web
 </h3>
