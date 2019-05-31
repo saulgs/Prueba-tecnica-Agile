@@ -1,0 +1,69 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Gráficos - Prueba técnica Agile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
+    
+</head>
+<body>
+    <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="p-4" style="background-color:#3788DB;">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Link</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+        <nav class="navbar navbar-dark" style="background-color:#573E8A;">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+              <span class="navbar-text">
+                Sales Report
+              </span>
+        </nav>
+      </div>
+
+      <div class="container">
+          <div class="container-fluid">
+              <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mx-auto py-4">
+                    <label for="slc-categoria">Categoria: </label>
+                    <select class="form-control" name="categoria" id="slc-categoria">
+                            <option disabled selected value> Seleccione </option>
+                    </select>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mx-auto py-4">
+                    <label for="slc-producto">Producto: </label>
+                    <select class="form-control" name="producto" id="slc-producto">
+                            <option disabled selected value> Seleccione </option>
+                    </select>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mx-auto py-4">
+                    <label for="slc-marca">Marca: </label>
+                    <select class="form-control" name="marca" id="slc-marca">
+                            <option disabled selected value> Seleccione </option>
+                    </select>
+                </div>
+              </div>
+              <div class="row">
+                  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mx-auto py-4">
+                    <canvas id="myChart" height="175"></canvas>
+                  </div>
+              </div>
+          </div>
+      </div>
+</body>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</html>
