@@ -6,7 +6,7 @@
 En el siguiente repositorio se encuentra la página web asignada para la prueba técnica asignada en Agile Solutions.
 </p><br>
 <h3>
-Programas requeridos para iniciar poder visualizar la página web
+Programas requeridos para poder visualizar la página web
 </h3>
 <ul>
     <li>Git - <a href="https://git-scm.com/downloads">Windows, MacOS</a></li>
